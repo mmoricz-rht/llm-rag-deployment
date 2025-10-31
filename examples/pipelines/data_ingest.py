@@ -127,10 +127,10 @@ COLLECTION_NAME = "documents_test"
 # In[4]:
 
 
-from langchain.document_loaders import PyPDFDirectoryLoader, WebBaseLoader
+from langchain_community.document_loaders import PyPDFDirectoryLoader, WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings.huggingface import HuggingFaceEmbeddings
-from langchain.vectorstores.pgvector import PGVector
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import PGVector
 
 
 # ## Initial index creation and document ingestion
