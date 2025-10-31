@@ -128,7 +128,7 @@ COLLECTION_NAME = "documents_test"
 
 
 from langchain_community.document_loaders import PyPDFDirectoryLoader, WebBaseLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import PGVector
 
