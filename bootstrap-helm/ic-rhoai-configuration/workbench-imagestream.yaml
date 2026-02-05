@@ -34,7 +34,6 @@ spec:
         name: >-
           quay.io/rh-aiservices-bu/rhoai-lab-parasol-insurance:1.2
       importPolicy:
-      importPolicy:
         importMode: Legacy
       referencePolicy:
         type: Source
