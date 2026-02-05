@@ -26,7 +26,7 @@ spec:
               else
                 DSC_PHASE=$(oc get DataScienceCluster -o jsonpath='{.items[0].status.phase}' 2>/dev/null || echo "Unknown")
                 DSCI_PHASE=$(oc get DSCInitialization -o jsonpath='{.items[0].status.phase}' 2>/dev/null || echo "Unknown")
-              DSCI_PHASE=$(oc get DSCInitialization -o jsonpath='{.items[0].status.phase}')
+              fi
               if [[ "$DSC_PHASE" = "Ready" && "$DSCI_PHASE" = "Ready" ]]; then
                 echo "DSCi and DSC are ready."
                 exit 0
